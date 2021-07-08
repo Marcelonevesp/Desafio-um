@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-08T22:17:52.319Z",
-    "end": "2021-07-08T22:18:10.580Z",
-    "duration": 18261,
+    "start": "2021-07-08T22:23:28.588Z",
+    "end": "2021-07-08T22:23:44.111Z",
+    "duration": 15523,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "81e118ae-fac9-4370-b6c1-c3b430eae9ea",
+      "uuid": "663cad01-c4e4-44a7-be08-a4cb27d24eb6",
       "title": "",
-      "fullFile": "cypress\\integration\\cadastro-usuario.spec.js",
-      "file": "cypress\\integration\\cadastro-usuario.spec.js",
+      "fullFile": "cypress/integration/cadastro-usuario.spec.js",
+      "file": "cypress/integration/cadastro-usuario.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "b4b9e239-3326-4df3-9d5d-3eaadeb52ac3",
+          "uuid": "3b88b5e9-8d8d-4126-b7cd-95243ac408e0",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastro  de usuário",
               "fullTitle": "Cadastro Cadastro  de usuário",
               "timedOut": null,
-              "duration": 18233,
+              "duration": 15479,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//Acessando o site\ncy.visit(''); //CLicando no botao para fazer login\ncy.get('a[title =\"Log in to your customer account\"]').click(); // Informando o e-mail\ncy.get('input#email_create').type(email); // Clicando no botão Create\ncy.get('button#SubmitCreate').click(); // Informando os campos obrigatórios - PERSONAL INFORMATION\ncy.get('input#id_gender1', {\n  timeout: 10000\n}).should('be.visible');\ncy.get('input#id_gender1').click(); //Informando genero masculino\ncy.get('input#customer_firstname').type(firstName); //Informando primeiro nome\ncy.get('input#customer_lastname').type(lastName); //Informando sobrenome\n//cy.get('input#email').type(email); //Informando o e-mail\ncy.get('input#passwd').type('123456'); // Informando os campos obrigatórios - YOUR ADDRESS\ncy.get('#firstname').type(firstName);\ncy.get('#lastname').type(lastName);\ncy.get('#address1').type(chance.address());\ncy.get('#city').type(chance.city());\ncy.get('select#id_state').select('Colorado');\ncy.get('#postcode').type(chance.zip());\ncy.get('#phone_mobile').type(chance.phone()); // Clicar botão salvar\ncy.get('button#submitAccount').click(); // Validando cadastro com sucesso\ncy.get('.info-account').should('have.text', 'Welcome to your account. Here you can manage all of your personal information and orders.');",
               "err": {},
-              "uuid": "0bd8a09b-f794-4e2a-985d-3e0d0d2c24b5",
-              "parentUUID": "b4b9e239-3326-4df3-9d5d-3eaadeb52ac3",
+              "uuid": "1444dd45-99b4-4686-942a-42d91b7b8d4d",
+              "parentUUID": "3b88b5e9-8d8d-4126-b7cd-95243ac408e0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0bd8a09b-f794-4e2a-985d-3e0d0d2c24b5"
+            "1444dd45-99b4-4686-942a-42d91b7b8d4d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18233,
+          "duration": 15479,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
