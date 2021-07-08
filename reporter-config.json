@@ -4,7 +4,7 @@
         "reportDir": "mochawesome-report",
         "quiet": true,
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true
     }
 }
